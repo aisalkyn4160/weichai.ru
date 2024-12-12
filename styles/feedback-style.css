@@ -1,0 +1,111 @@
+.feedback{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 66px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(6, 93, 171, 0.7);
+}
+.feedback .container{
+    position: relative;
+    z-index: 1;
+}
+
+.feedback-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 100px;
+}
+.feedback-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+    padding-top: 60px;
+}
+.feedback-form h2{
+    margin-bottom: 20px;
+}
+.feedback-form p{
+    margin-bottom: 32px;
+}
+.feedback-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-form form input{
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.feedback-form form textarea{
+    height: 114px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    resize: none;
+}
+.feedback-form form div{
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+.feedback-form form span{
+    max-width: 310px;
+}
+form a{
+    display: inline;
+    border-bottom: 1px solid #fff;
+}
+.feedback-img{
+    width: 486px;
+    height: 100%;
+}
+.feedback-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}   
+
+@media (max-width: 1100px){
+    .feedback-content{
+        gap: 50px;
+    }
+    .feedback-form form div{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .feedback-form form span{
+        max-width: 100%;
+    }
+    .feedback-form form .btn{
+        width: 100%;
+    }
+}
+@media (max-width: 850px){
+   
+    .feedback-img{
+        display: none;
+    }
+    .feedback-form{
+        width: 100%;
+        max-width: 588px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 0;
+    }
+}

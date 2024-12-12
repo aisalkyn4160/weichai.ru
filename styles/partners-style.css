@@ -1,0 +1,81 @@
+.partners{
+    padding: 120px 0px 60px;
+}
+.partners h2{
+    margin-bottom: 40px;
+    max-width: calc(100% - 130px);
+}
+.partner-item{
+    width: 100%;
+    aspect-ratio: 1.64/1;
+    border: 1px solid rgba(243, 243, 243, 1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.partner-item img{
+    width: 100%;
+    object-fit: cover;
+}
+.partner-item:hover{
+    border: 1px solid rgba(6, 93, 171, 1);
+}
+.partners-swiper.swiper{
+    padding-top: 100px;
+    margin-top: -75px;
+    padding-bottom: 60px;
+}
+.partners-swiper .swiper-button-next::after, 
+.partners-swiper .swiper-button-prev::after{
+    display: none;
+}
+.partners-swiper .swiper-button-next svg,
+.partners-swiper .swiper-button-prev svg{
+    width: 10px;
+    height: 16px;
+}
+.partners-swiper .swiper-button-next,
+.partners-swiper .swiper-button-prev{
+    top: 8px;
+}
+
+.partners-swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 113px;
+}
+.partners-swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0px;
+}
+
+ 
+ .swiper-horizontal>.partners-swiper .swiper-pagination-bullets, .partners-swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    top: -3px;
+    width: max-content;
+    right: 48px;
+    left: auto;
+}
+
+@media (max-width: 750px){
+    .partners{
+        padding: 60px 0px 60px;
+    }
+    .partners h2{
+        max-width: calc(100% - 30px);
+        margin-bottom: 32px;
+    }
+    .partners-swiper.swiper{
+        margin-top: -55px;
+    }
+    .swiper-horizontal>.partners-swiper .swiper-pagination-bullets, .partners-swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: auto;
+        bottom: -3px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .partners-swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        right: 30px;;
+    }
+}

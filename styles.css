@@ -1,0 +1,39 @@
+.gensets-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.gensets-table th,
+.gensets-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.gensets-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.gensets-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.gensets-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Выделение активной строки (как на вашем изображении) */
+.gensets-table tbody tr.active {
+    border: 2px solid #007bff;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .gensets-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+} 
